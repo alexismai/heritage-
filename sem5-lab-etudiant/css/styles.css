@@ -4,7 +4,9 @@
 html {
     box-sizing: border-box;
 }
-
+html {
+    font-size: 62.5%
+  }
 *,
 *:before,
 *:after {
@@ -21,7 +23,7 @@ body {
 body {
     font-family: 'PT Sans', sans-serif;
     font-weight: normal;
-    font-size: 18px;
+    font-size: 18rem;
     line-height: 160%;
 }
 
@@ -33,10 +35,7 @@ body {
 /* ===== Numéro 2 ===== */
 .wrapper {
     max-width: 1100px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0;
-    margin-bottom: 0;
+    margin: 0 auto;
 }
 
 
@@ -46,161 +45,137 @@ body {
 
 /* ===== Numéro 3a ===== */
 header .wrapper {
-
+    margin-left: auto;
+    display: flex;
+    list-style-type: none;
+    margin-right: 20px;
+    margin-right: 0;
 }
 
 /* ===== Numéro 3b ===== */
 .logo {
-
+    display: flex;
+    align-items: center; 
+    margin-right: 20px;
+    font: 700 2.5rem/1 'Nunito', sans-serif;
+    color: #444; 
+    text-decoration: none;
 }
 
 /* ===== Numéro 3c ===== */
-/*
-.menu ul {
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-right: 0;
-    margin-left: 0;
 
-    padding-top: 0;
-    padding-bottom: 0;
-    padding-right: 0;
-    padding-left: 0;
+.menu ul {
+    margin-right: 0;
+    margin-right: 30px;
+    display: flex;
+    list-style-type: none;
 }
-*/
+
 
 /* ===== Numéro 3d ===== */
-/*
+
 .menu a {
-    color: black;
-    font-weight: bold;
-    font-size: 14px;
-    font-family: 'PT Sans', sans-serif;
-    padding-top: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 5px;
-    text-transform: uppercase;
-    text-decoration: none;
+    color: #000;
+    font: bold 0.875rem/1 'PT Sans', sans-serif;
+    padding: 5px 10px;
+    border: 2px solid transparent;
 }
-*/
+
 
 /* ===== Numéro 3e ===== */
-/*
+
 .menu a:hover {
-    border-top-color: #000;
-    border-right-color: black;
-    border-bottom-color: #000;
-    border-left-color: black;
-    border-top-style: solid;
-    border-right-style: solid;
-    border-left-style: solid;
-    border-bottom-style: solid;
-    border-top-width: 2px;
-    border-right-width: 2px;
-    border-bottom-width: 2px;
-    border-left-width: 2px;
+    border: 2px solid #000;
 }
-*/
+
 
 /* ===== Numéro 3f ===== */
-/*
+
 header {
     padding-top: 20px;
     padding-left: 0;
     padding-right: 0;
     padding-bottom: 20px;
+    position: absolute;
+    inset: 0;
 }
-*/
+
 
 /* ===== Numéro 4a ===== */
-/*
+
 .hero {
-    background-image: url('../images/hero.jpg');
-    background-position: center right;
-    background-repeat: no-repeat;
+    background: url('../images/hero.jpg') center right no-repeat;
 }
-*/
+
 
 /* ===== Numéro 4b ===== */
 .hero .wrapper {
-
+    display: flex;
+   min-height: 650px;
 }
 
 /* ===== Numéro 4c ===== */
 .hero .contenu {
-
+max-width: 50%;
+color: white;
 }
 
 /* ===== Numéro 4d ===== */
-/*
-.hero h1 {
-    font-weight: 100;
-    font-size: 100px;
-    line-height: 100%;
 
-    font-family: Nunito, sans-serif;
-    margin-top: 0;
-    margin-bottom: 20px;
-    margin-left: 0;
-    margin-right: 0;
-    color: #F2545B;
+.hero h1 {
+    font: 100 6.25rem/1 'Nunito', sans-serif;
+    margin: 0 0 1.25rem 0; 
+
+    color:#f2545b;
+
 }
-*/
+
 
 /* ===== Numéro 5a ===== */
-/*
+
 .athletes h2 {
-    font-family: Nunito, sans-serif;
-    font-weight: bold;
-    font-size: 50px;
-    margin-top: 0;
-    margin-bottom: 50px;
-    margin-left: 0;
-    margin-right: 0;
+    font: bold 3.125rem/1 'Nunito', sans-serif;
+    margin: 0 0 3.125rem 0;
 }
-*/
+
 
 /* ===== Numéro 5b ===== */
-/*
-.athletes p {
-    margin-right: 0;
-    margin-bottom: 50px;
-    margin-top: 0;
-    margin-left: 0;
-}
-*/
 
-/* ===== Numéro 5c ===== */
-/*
-.athletes {
-    padding-top: 100px;
-    padding-bottom: 100px;
-    padding-left: 0;
-    padding-right: 0;
+.athletes p {
+ margin: 0 0 3.125rem 0;   
+
 }
-*/
+/* ===== Numéro 5c ===== */
+
+.athletes {
+    padding: 10px;
+}
+
 
 
 /* ===== Numéro 5d ===== */
 .athletes-photos {
-
+    display: grid;
+    grid-template-columns: repeat(3, 1fr)
 }
 
 /* ===== Numéro 5e ===== */
 .athletes-photos img {
-
+max-width: 100%;
 }
 
 /* ===== Numéro 5f ===== */
 .athlete1 {
-
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-gap: 10px;
 }
 
 
 /* ===== Numéro 6a ===== */
 footer {
-
+    background: black;
+    width: 100vw;
 }
 
 footer .wrapper {
@@ -208,19 +183,14 @@ footer .wrapper {
 }
 
 /* ===== Numéro 6b ===== */
-/*
-.menu-social {
-    margin-top: 0;
-    margin-left: 0;
-    margin-bottom: 0;
-    margin-right: 0;
 
-    padding-left: 0;
-    padding-right: 0;
-    padding-top: 0;
-    padding-bottom: 0;
+.menu-social {
+    display: flex; /* Utilisez du Flex pour rendre la navigation horizontale */
+    list-style-type: none; /* Enlever les puces de liste */
+    margin: 0; /* Remplacez les déclarations des marges intérieures et extérieures pour utiliser leurs propriétés raccourcies */
+    padding: 0; /
 }
-*/
+
 
 
 /* ===== Numéro 6c ===== */
@@ -230,8 +200,7 @@ footer .wrapper .menu-social a {
 }
 
 /* ===== Numéro 6d ===== */
-/*
+
 .menu-social a:hover {
     background: gray;
 }
-*/
